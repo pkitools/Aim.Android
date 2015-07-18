@@ -156,7 +156,7 @@ public class SecureMailMessage extends AbstractMailMessage {
         _mailcap.addMailcap("multipart/signed;; x-java-content-handler=org.spongycastle.mail.smime.handlers.multipart_signed");
         //originalMap=CommandMap.getDefaultCommandMap();
         CommandMap.setDefaultCommandMap(_mailcap);
-        
+
         if (Security.getProvider(Configuration.PROVIDER_NAME) == null) {
             Security.addProvider(new BouncyCastleProvider());
         }

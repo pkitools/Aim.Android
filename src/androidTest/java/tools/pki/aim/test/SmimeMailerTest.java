@@ -13,7 +13,7 @@ public class SmimeMailerTest extends TestCase {
 
     public void testSetRecieverCertificate() throws Exception {
 
-        SmimeMailer mailer = new SmimeMailer("smtp.pki.tools",587,"farhang@pki.tools","zaq12wsxCDE#", MimeMailer.SslMode.None);
+        SmimeMailer mailer = new SmimeMailer("smtp.pki.tools",587,"test@pki.tools","testpass", MimeMailer.SslMode.None);
     }
 
     public void testSetKeyStore() throws Exception {
